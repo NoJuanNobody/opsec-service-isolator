@@ -1,6 +1,10 @@
 import os
+import sys
 import tempfile
 import unittest
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from opsec_service_isolator.core import (
     audit_service_coupling,
     generate_isolation_blueprint,
